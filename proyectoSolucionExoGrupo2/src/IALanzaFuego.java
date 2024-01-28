@@ -1,13 +1,16 @@
 public class IALanzaFuego implements IIFArma{
     private String iaLongitud;
 
-    public String iaGetIaColor() {
-        return iaLongitud;
+    public IALanzaFuego(String Longitud) {
+        this.iaLongitud = Longitud;
     }
+    // public String iaGetColor() {
+    //     return iaLongitud;
+    // }
 
-    public void iaSetIaColor(String iaLongitud) {
-        this.iaLongitud = iaLongitud;
-    }
+    // public void iaSetColor(String iaLongitud) {
+    //     this.iaLongitud = iaLongitud;
+    // }
 
     @Override
     public void ifDisparar() {

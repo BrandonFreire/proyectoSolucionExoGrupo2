@@ -2,13 +2,13 @@ public class IASoldado {
     private String iaCodigoSeguridad;
     protected IFExobot ifExobot;
 
-    public String iaGetIaCodigoSeguridad() {
-        return iaCodigoSeguridad;
-    }
+    // public String iaGetCodigoSeguridad() {
+    //     return iaCodigoSeguridad;
+    // }
 
-    public void iaSetIaCodigoSeguridad(String iaCodigoSeguridad) {
-        this.iaCodigoSeguridad = iaCodigoSeguridad;
-    }
+    // public void iaSetCodigoSeguridad(String iaCodigoSeguridad) {
+    //     this.iaCodigoSeguridad = iaCodigoSeguridad;
+    // }
 
     public void iaUsar(IFExobot iaUsa){
         this.ifExobot = iaUsa;
