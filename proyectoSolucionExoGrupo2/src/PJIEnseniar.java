@@ -1,7 +1,7 @@
-public interface PJIEnsenia {
-    void pjenseniarLexico();
+public interface PJIEnseniar {
+    void pjEnseniarLexico();
 
-    void pjenseniarGramatica();
+    void pjEnseniarGramatica();
 
-    void pjenseniarFonetica();
+    void pjEnseniarFonetica();
 }

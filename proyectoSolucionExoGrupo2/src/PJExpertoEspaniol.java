@@ -1,4 +1,4 @@
-public class PJExpertoEspaniol implements PJIAprendeEspaniol,PJIEnsenia{
+public class PJExpertoEspaniol implements PJIEnseniar{
 
     private String pjnombre;
     private int pjedad;
@@ -37,28 +37,25 @@ public class PJExpertoEspaniol implements PJIAprendeEspaniol,PJIEnsenia{
     }
 
     @Override
-    public void pjenseniarLexico() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'pjenseniarLexico'");
+    public void pjEnseniarLexico() {
+        System.out.println("Enseniando lexico");
     }
 
     @Override
-    public void pjenseniarGramatica() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'pjenseniarGramatica'");
+    public void pjEnseniarGramatica() {
+        System.out.println("Ensiniando gramatica");
     }
 
     @Override
-    public void pjenseniarFonetica() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'pjenseniarFonetica'");
+    public void pjEnseniarFonetica() {
+        System.out.println("Enseniando fonetica");
     }
 
-    @Override
-    public void pjAprenderEspaniol() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'pjAprenderEspaniol'");
+    public void dmEnseniarEspanol (PJIAprendeEspaniol dmAlumnoEspaniol){
+        System.out.println("Enseniando espanol");
+        pjEnseniarFonetica();
+        pjEnseniarGramatica();
+        pjEnseniarLexico();
     }
-
    
 }
