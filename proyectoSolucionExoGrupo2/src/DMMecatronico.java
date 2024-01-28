@@ -47,7 +47,7 @@ public class DMMecatronico {
 
     public String dmEnsamblarBateria(){
         IFFuenteDePoder dmFuntePoder = new IFFuenteDePoder();
-        dmExobot.ensamblarFuenteDePoder(dmFuntePoder);
+        dmExobot.IFensamblarFuenteDePoder(dmFuntePoder);
         return "Se ha ensamblado una batería de energía.";
     }
 
