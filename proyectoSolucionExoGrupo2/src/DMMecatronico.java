@@ -27,12 +27,12 @@ public class DMMecatronico {
         return dmCaracteristicas;
     }
 
-    public IFExobot IAAsignarASoldado(IASoldado iaSoldado) {
+    public IFExobot IAAsignarASoldado(IASoldado iaAsignado) {
         IFExobot dmExobot = new IFExobot("codigoDeSeguridad");
         String dmCaracteristicas = dmEnsamblar(dmExobot);
         System.out.println("Se ha ensamblado y asignado un Exobot a un Soldado: \n" + dmCaracteristicas);
     
-        iaSoldado.iaUsar(dmExobot);
+        iaAsignado.iaUsar(dmExobot);
         return dmExobot;
     }
     
