@@ -1,12 +1,12 @@
 /**
  * @autor Ismael Freire
  * @date 27/01/2024
- * brandon.freire@outlook.com
- * @version  1.0
+ *       brandon.freire@outlook.com
+ * @version 1.1
  */
-public class IFTuboReactor implements IIFArma{
+public class IFTuboReactor implements IIFArma {
     private String ifColor;
-    
+
     /**
      * Constructor sin parametros
      */
@@ -15,21 +15,23 @@ public class IFTuboReactor implements IIFArma{
 
     /**
      * Constructor con parametros
+     * 
      * @param ifColor
      */
     public IFTuboReactor(String ifColor) {
         this.ifColor = ifColor;
     }
 
-    /** getter/setter
+    /**
+     * getter/setter
      * 
      * @return
      */
-    public String getIfColor() {
+    public String IFgetColor() {
         return ifColor;
     }
 
-    public void setIfColor(String ifColor) {
+    public void IFsetColor(String ifColor) {
         this.ifColor = ifColor;
     }
 

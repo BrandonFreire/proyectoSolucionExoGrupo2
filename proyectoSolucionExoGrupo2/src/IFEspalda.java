@@ -1,14 +1,14 @@
 /**
  * @autor Ismael Freire
  * @date 27/01/2024
- * brandon.freire@outlook.com
- * @version  1.0
+ *       brandon.freire@outlook.com
+ * @version 1.1
  */
 public class IFEspalda {
     private String ifTamanio;
     private String ifColor;
     public IFTuboReactor ifTuboReactor;
-    
+
     /**
      * Constructor sin parametros
      */
@@ -17,6 +17,7 @@ public class IFEspalda {
 
     /**
      * Constructor con parametros
+     * 
      * @param ifTamanio
      * @param ifColor
      */
@@ -26,20 +27,24 @@ public class IFEspalda {
         this.ifTuboReactor = new IFTuboReactor();
     }
 
-    /** getter/setter
+    /**
+     * getter/setter
      * 
      * @return
      */
-    public String getIfTamanio() {
+    public String IFgetTamanio() {
         return ifTamanio;
     }
-    public void setIfTamanio(String ifTamanio) {
+
+    public void IFsetTamanio(String ifTamanio) {
         this.ifTamanio = ifTamanio;
     }
-    public String getIfColor() {
+
+    public String IFgetColor() {
         return ifColor;
     }
-    public void setIfColor(String ifColor) {
+
+    public void IFsetColor(String ifColor) {
         this.ifColor = ifColor;
     }
 }
