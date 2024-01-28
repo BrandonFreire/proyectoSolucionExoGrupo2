@@ -48,7 +48,7 @@ public class PJIABot implements PJIAprendeEspaniol, PJIAprendeIngles {
      * Método para crear un código de seguridad predeterminado para el bot.
      */
     public void pjCrearCodigoSeguridad() {
-        setPjcodigoSeguridad("123456789");
+        pjsetcodigoSeguridad("123456789");
     }
 
     @Override
