@@ -44,19 +44,5 @@ public class PJExpertoEspaniol implements PJIEnseniar{
         this.edad = edad;
     }
 
-    @Override
-    public void pjLexico() {
-        System.out.println("Enseñando léxico...");
-    }
-
-    @Override
-    public void pjGramatica() {
-        System.out.println("Enseñando gramática...");
-    }
-
-    @Override
-    public void pjFonetica() {
-        System.out.println("Enseñando fonética...");
-    }
 }
 
