@@ -9,7 +9,10 @@ public class IFExobot extends PJIABot{
     private String ifColorExobot;
     public IFEspalda ifEspalda;
     protected IAExtremidadSuperiorDerecha iaExtremidadSuperiorDerecha;
+    DMExtremidadInferior  dmExtremidadInferiorIzq;
+    DMExtremidadInferior dmExtremidadInferiorDer;
     public IFFuenteDePoder ifFuenteDePoder;
+    DMExtremidadSuperiorIzquierda dmExtremidadSuperiorIzquierda;
 
     /**
      * Constructor con parametros
@@ -20,6 +23,9 @@ public class IFExobot extends PJIABot{
         super(pjcodigoSeguridad);
         this.ifEspalda = new IFEspalda();
         iaExtremidadSuperiorDerecha = new IAExtremidadSuperiorDerecha("123489",18);
+        dmExtremidadSuperiorIzquierda = new DMExtremidadSuperiorIzquierda("mdASDF","0.6");
+        dmExtremidadInferiorIzq = new DMExtremidadInferior("Izquierdo", "verde", "1.3");
+        dmExtremidadInferiorDer = new DMExtremidadInferior("Derecha", "verde", "1.3");
     }
 
     /** getter/setter Patron
