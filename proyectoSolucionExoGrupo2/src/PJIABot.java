@@ -1,12 +1,4 @@
-/**
- * Clase que representa un bot que puede aprender español e inglés.
- * Implementa las interfaces PJIAprendeEspaniol y PJIAprenderIngles.
- * 
- * @author Jonathan Paredes
- * @Github Jonathan4325
- * @version 2.43
- */
-public class PJIABot implements PJIAprendeEspaniol, PJIAprenderIngles {
+public class PJIABot implements PJIAprendeEspaniol, PJIAprendeIngles {
 
     private String pjcodigoSeguridad;
 
