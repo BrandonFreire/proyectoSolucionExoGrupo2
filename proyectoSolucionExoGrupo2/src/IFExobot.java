@@ -8,7 +8,9 @@ public class IFExobot extends PJIABot{
     private String ifPatronColor;
     private String ifColorExobot;
     public IFEspalda ifEspalda;
+    protected IAExtremidadSuperiorDerecha iaExtremidadSuperiorDerecha;
     public IFFuenteDePoder ifFuenteDePoder;
+
     /**
      * Constructor con parametros
      * Tiene una relacion de composicion con Espalda
@@ -17,6 +19,7 @@ public class IFExobot extends PJIABot{
     public IFExobot(String pjcodigoSeguridad) {
         super(pjcodigoSeguridad);
         this.ifEspalda = new IFEspalda();
+        iaExtremidadSuperiorDerecha = new IAExtremidadSuperiorDerecha();
     }
 
     /** getter/setter Patron
