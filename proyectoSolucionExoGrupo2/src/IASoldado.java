@@ -1,6 +1,11 @@
 public class IASoldado {
     private String iaCodigoSeguridad;
-    protected IFExobot ifExobot;
+    protected IFExobot Exobot;
+
+    public IASoldado (String CodigoSeguridad){
+      this.iaCodigoSeguridad = CodigoSeguridad;
+      iaUsar(Exobot);
+    }
 
     // public String iaGetCodigoSeguridad() {
     //     return iaCodigoSeguridad;
@@ -11,7 +16,7 @@ public class IASoldado {
     // }
 
     public void iaUsar(IFExobot iaUsa){
-        this.ifExobot = iaUsa;
+        this.Exobot = iaUsa;
     }
 
     public void iaCorrer(){

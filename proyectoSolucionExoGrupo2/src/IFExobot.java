@@ -19,7 +19,7 @@ public class IFExobot extends PJIABot{
     public IFExobot(String pjcodigoSeguridad) {
         super(pjcodigoSeguridad);
         this.ifEspalda = new IFEspalda();
-        iaExtremidadSuperiorDerecha = new IAExtremidadSuperiorDerecha();
+        iaExtremidadSuperiorDerecha = new IAExtremidadSuperiorDerecha("123489",18);
     }
 
     /** getter/setter Patron

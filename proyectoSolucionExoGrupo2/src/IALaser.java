@@ -1,4 +1,5 @@
 public class IALaser implements IIFArma {
+    
     private String iaColor;
 
     public IALaser(String Color) {
