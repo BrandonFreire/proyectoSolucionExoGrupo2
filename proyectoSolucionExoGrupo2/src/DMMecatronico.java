@@ -27,6 +27,17 @@ public class DMMecatronico {
         return dmCaracteristicas;
     }
 
+    public IFExobot IAAsignarASoldado(IASoldado iaSoldado) {
+        IFExobot dmExobot = new IFExobot("codigoDeSeguridad");
+        String dmCaracteristicas = dmEnsamblar(dmExobot);
+        System.out.println("Se ha ensamblado y asignado un Exobot a un Soldado: \n" + dmCaracteristicas);
+    
+        iaSoldado.iaUsar(dmExobot);
+        return dmExobot;
+    }
+    
+    
+
     public String dmElegirArmas(){
         int numeroAleatorio = rand.nextInt(2);
 
@@ -35,20 +46,20 @@ public class DMMecatronico {
             DMBazuca dmBazuca  = new DMBazuca("0.9");
             dmExobot.iaExtremidadSuperiorDerecha.iaUsarLaser(dmLaser);
             dmExobot.dmExtremidadSuperiorIzquierda.dmUsarBazuca(dmBazuca);
-            return "Armas: Laser y Bazuca";
+            return "Armas: Laser y Bazuca\n";
         }else{
             IALanzaFuego  dmLanzaFuego = new IALanzaFuego("0.8");
             DMMetralleta dmMetralleta = new DMMetralleta("Verde oscuro");
             dmExobot.iaExtremidadSuperiorDerecha.iaUsarLanzaFuego(dmLanzaFuego);
             dmExobot.dmExtremidadSuperiorIzquierda.dmUsarMetralleta(dmMetralleta);
-            return "Armas: Lanza Fuego y Metralleta";
+            return "Armas: Lanza Fuego y Metralleta\n";
         }
     }
 
     public String dmEnsamblarBateria(){
         IFFuenteDePoder dmFuntePoder = new IFFuenteDePoder();
         dmExobot.IFensamblarFuenteDePoder(dmFuntePoder);
-        return "Se ha ensamblado una batería de energía.";
+        return "\n Se ha ensamblado una batería de energía.";
     }
 
 }
