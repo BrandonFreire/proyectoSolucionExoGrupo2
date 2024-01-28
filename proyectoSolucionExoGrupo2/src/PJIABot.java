@@ -4,7 +4,7 @@
  * 
  * @author Jonathan Paredes
  * @Github Jonathan4325
- * @version 1.0
+ * @version 2.43
  */
 public class PJIABot implements PJIAprendeEspaniol, PJIAprenderIngles {
 
@@ -18,18 +18,15 @@ public class PJIABot implements PJIAprendeEspaniol, PJIAprenderIngles {
         this.pjcodigoSeguridad = pjcodigoSeguridad;
     }
 
-    /**
-     * Método para obtener el código de seguridad del bot.
-     * @return 
+    /** getter/setter
+     * 
+     * @return
      */
     public String getPjcodigoSeguridad() {
         return pjcodigoSeguridad;
     }
 
-    /**
-     * Método para establecer el código de seguridad del bot.
-     * @param pjcodigoSeguridad El nuevo código de seguridad del bot.
-     */
+    
     public void setPjcodigoSeguridad(String pjcodigoSeguridad) {
         this.pjcodigoSeguridad = pjcodigoSeguridad;
     }
