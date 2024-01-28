@@ -21,34 +21,25 @@ public class PJExpertoEspaniol implements PJIEnseniar{
         this.edad = edad;
     }
 
-    /**
-     * Método para obtener el nombre del experto en español.
-     * @return El nombre del experto en español.
+    /** getter/setter
+     * 
+     * @return
      */
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * Método para establecer el nombre del experto en español.
-     * @param nombre El nuevo nombre del experto en español.
-     */
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * Método para obtener la edad del experto en español.
-     * @return La edad del experto en español.
-     */
+    
     public int getEdad() {
         return edad;
     }
 
-    /**
-     * Método para establecer la edad del experto en español.
-     * @param edad La nueva edad del experto en español.
-     */
+    
     public void setEdad(int edad) {
         this.edad = edad;
     }
