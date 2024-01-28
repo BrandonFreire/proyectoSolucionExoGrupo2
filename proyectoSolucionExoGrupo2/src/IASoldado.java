@@ -1,17 +1,22 @@
 public class IASoldado {
     private String iaCodigoSeguridad;
-    protected IFExobot ifExobot;
+    protected IFExobot Exobot;
 
-    public String iaGetIaCodigoSeguridad() {
-        return iaCodigoSeguridad;
+    public IASoldado (String CodigoSeguridad){
+      this.iaCodigoSeguridad = CodigoSeguridad;
+      iaUsar(Exobot);
     }
 
-    public void iaSetIaCodigoSeguridad(String iaCodigoSeguridad) {
-        this.iaCodigoSeguridad = iaCodigoSeguridad;
-    }
+    // public String iaGetCodigoSeguridad() {
+    //     return iaCodigoSeguridad;
+    // }
+
+    // public void iaSetCodigoSeguridad(String iaCodigoSeguridad) {
+    //     this.iaCodigoSeguridad = iaCodigoSeguridad;
+    // }
 
     public void iaUsar(IFExobot iaUsa){
-        this.ifExobot = iaUsa;
+        this.Exobot = iaUsa;
     }
 
     public void iaCorrer(){

@@ -1,13 +1,17 @@
 public class IALaser implements IIFArma {
+    
     private String iaColor;
 
-    public String iaGetIaColor() {
-        return iaColor;
+    public IALaser(String Color) {
+        this.iaColor = Color;
     }
+    // public String iaGetColor() {
+    //     return iaColor;
+    // }
 
-    public void iaSetIaColor(String iaColor) {
-        this.iaColor = iaColor;
-    }
+    // public void iaSetColor(String iaColor) {
+    //     this.iaColor = iaColor;
+    // }
 
     @Override
     public void ifDisparar() {
