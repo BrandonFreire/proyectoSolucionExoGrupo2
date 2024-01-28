@@ -14,12 +14,12 @@ public class PJIABot implements PJIAprendeEspaniol, PJIAprendeIngles {
      * 
      * @return
      */
-    public String getPjcodigoSeguridad() {
+    public String pjgetcodigoSeguridad() {
         return pjcodigoSeguridad;
     }
 
     
-    public void setPjcodigoSeguridad(String pjcodigoSeguridad) {
+    public void pjsetcodigoSeguridad(String pjcodigoSeguridad) {
         this.pjcodigoSeguridad = pjcodigoSeguridad;
     }
 
