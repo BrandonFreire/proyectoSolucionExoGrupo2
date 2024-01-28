@@ -4,7 +4,6 @@ public class IASoldado {
 
     public IASoldado (String CodigoSeguridad){
       this.iaCodigoSeguridad = CodigoSeguridad;
-      iaUsar(Exobot);
     }
 
     // public String iaGetCodigoSeguridad() {
@@ -17,6 +16,7 @@ public class IASoldado {
 
     public void iaUsar(IFExobot iaUsa){
         this.Exobot = iaUsa;
+        System.out.println("Exobot asignado al soldado con código de seguridad: " + iaCodigoSeguridad);
     }
 
     public void iaCorrer(){
