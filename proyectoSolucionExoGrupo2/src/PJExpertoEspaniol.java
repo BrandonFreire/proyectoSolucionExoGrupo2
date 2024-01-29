@@ -38,24 +38,25 @@ public class PJExpertoEspaniol implements PJIEnseniar{
 
     @Override
     public void pjEnseniarLexico() {
-        System.out.println("Enseniando lexico");
+       // System.out.println("Enseniando lexico");
     }
 
     @Override
     public void pjEnseniarGramatica() {
-        System.out.println("Ensiniando gramatica");
+       // System.out.println("Ensiniando gramatica");
     }
 
     @Override
     public void pjEnseniarFonetica() {
-        System.out.println("Enseniando fonetica");
+       // System.out.println("Enseniando fonetica");
     }
 
     public void dmEnseniarEspanol (PJIAprendeEspaniol dmAlumnoEspaniol){
-        System.out.println("Enseniando espanol");
+       //  System.out.println("Enseniando espanol");
         pjEnseniarFonetica();
         pjEnseniarGramatica();
         pjEnseniarLexico();
+        dmAlumnoEspaniol.pjAprenderEspaniol();
     }
    
 }

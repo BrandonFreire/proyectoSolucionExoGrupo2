@@ -1,7 +1,6 @@
 public class App {
-    static DMMecatronico dmMecatronico = new DMMecatronico("David");
-    static IFExobot dmExobot = new IFExobot(null);
+    static DMTaller dmTaller = new DMTaller();
     public static void main(String[] args) {
-        System.out.println(dmMecatronico.dmEnsamblar(dmExobot));
+        dmTaller.ensamblarExobots();
     }
 }

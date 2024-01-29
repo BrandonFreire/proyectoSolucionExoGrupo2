@@ -1,16 +1,46 @@
+import java.security.SecureRandom;
+
 public class PJIABot implements PJIAprendeEspaniol, PJIAprendeIngles {
 
     private String pjcodigoSeguridad;
+    private boolean dmIsEspanolAvaible;
+    private boolean dmIsInglesAvaible;
+
+    // Crear codigos de seguridad
+
+    public boolean dmIsEspanolAvaible() {
+        return dmIsEspanolAvaible;
+    }
+
+    public void dmSetIsEspanolAvaible(boolean dmIsEspanolAvaible) {
+        this.dmIsEspanolAvaible = dmIsEspanolAvaible;
+    }
+
+    public boolean dmIsInglesAvaible() {
+        return dmIsInglesAvaible;
+    }
+
+    public void setDmIsInglesAvaible(boolean dmIsInglesAvaible) {
+        this.dmIsInglesAvaible = dmIsInglesAvaible;
+    }
+
+    private static final String CARACTERES = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    private static SecureRandom random = new SecureRandom();
+    
 
     /**
      * Constructor de la clase PJIABot.
-     * @param pjcodigoSeguridad 
+     * 
+     * @param pjcodigoSeguridad
      */
-    public PJIABot(String pjcodigoSeguridad) {
-        this.pjcodigoSeguridad = pjcodigoSeguridad;
+    public PJIABot() {
+        pjCrearCodigoSeguridad();
+        this.dmIsEspanolAvaible = false;
+        this.dmIsInglesAvaible = false;
     }
 
-    /** getter/setter
+    /**
+     * getter/setter
      * 
      * @return
      */
@@ -18,17 +48,18 @@ public class PJIABot implements PJIAprendeEspaniol, PJIAprendeIngles {
         return pjcodigoSeguridad;
     }
 
-    
-    public void pjsetcodigoSeguridad(String pjcodigoSeguridad) {
+    public void pjSetcodigoSeguridad(String pjcodigoSeguridad) {
         this.pjcodigoSeguridad = pjcodigoSeguridad;
     }
 
-    /**
-     * Método para que vuele velozmente.
-     */
-    public void pjVolarVeloz() {
-        System.out.println("Volando velozmente...");
+    public void pjCrearCodigoSeguridad() {
+        StringBuilder codigo = new StringBuilder(10);
+        for (int i = 0; i < 10; i++) {
+            codigo.append(CARACTERES.charAt(random.nextInt(CARACTERES.length())));
+        }
+        pjSetcodigoSeguridad(codigo.toString());
     }
+
 
     /**
      * Método para que salte alto.
@@ -47,17 +78,16 @@ public class PJIABot implements PJIAprendeEspaniol, PJIAprendeIngles {
     /**
      * Método para crear un código de seguridad predeterminado para el bot.
      */
-    public void pjCrearCodigoSeguridad() {
-        pjsetcodigoSeguridad("123456789");
-    }
 
     @Override
     public void pjAprenderEspaniol() {
-        System.out.println("Aprendiendo español...");
+        //System.out.println("Aprendiendo español...");
+        this.dmIsEspanolAvaible = true;
     }
 
     @Override
     public void pjAprenderIngles() {
-        System.out.println("Aprendiendo inglés...");
+        //System.out.println("Aprendiendo inglés...");
+        this.dmIsInglesAvaible = true;
     }
 }
