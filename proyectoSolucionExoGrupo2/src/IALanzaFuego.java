@@ -1,23 +1,33 @@
+/**
+ * @autor Ivonne Ayala
+ * @date 28/01/2024
+ * @version 9.0
+ */
 public class IALanzaFuego implements IIFArma{
+    //Atributos
     private String iaLongitud;
     IFFuenteDePoder dmFuenteDePoder;
 
+    /**
+     * Constructor de la clase IALanzaFuego
+     * @param Longitud
+     */
     public IALanzaFuego(String Longitud) {
         this.iaLongitud = Longitud;
     }
-    // public String iaGetColor() {
-    //     return iaLongitud;
-    // }
-
-    // public void iaSetColor(String iaLongitud) {
-    //     this.iaLongitud = iaLongitud;
-    // }
-
+    
+    /**
+     * Método para disparar
+     */
     @Override
     public void ifDisparar() {
         System.out.println("Lanza fuego disparandose...");
     }
 
+    /**
+     * Método que verifica la capacidad de disparo del lanzallamas basándose en la fuente de poder.
+     * @param fuenteDePoder
+     */
     public void dmVerificarDisparo(IFFuenteDePoder fuenteDePoder){
         dmFuenteDePoder =  fuenteDePoder;
         if (dmFuenteDePoder.dmGetPorcentajeBateria()>=70) {
@@ -40,3 +50,12 @@ public class IALanzaFuego implements IIFArma{
         }
     }  
 }
+
+    // public String iaGetColor() {
+    //     return iaLongitud;
+    // }
+
+    // public void iaSetColor(String iaLongitud) {
+    //     this.iaLongitud = iaLongitud;
+    // }
+
