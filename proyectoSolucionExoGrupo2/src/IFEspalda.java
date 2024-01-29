@@ -7,13 +7,7 @@
 public class IFEspalda {
     private String ifTamanio;
     private String ifColor;
-    public IFTuboReactor ifTuboReactor;
-
-    /**
-     * Constructor sin parametros
-     */
-    public IFEspalda() {
-    }
+    public IFTurboReactor ifTurboReactor;
 
     /**
      * Constructor con parametros
@@ -24,7 +18,7 @@ public class IFEspalda {
     public IFEspalda(String ifTamanio, String ifColor) {
         this.ifTamanio = ifTamanio;
         this.ifColor = ifColor;
-        this.ifTuboReactor = new IFTuboReactor();
+        this.ifTurboReactor = new IFTurboReactor("verde oscuro");
     }
 
     /**

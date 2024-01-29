@@ -17,7 +17,7 @@ public class DMBazuca implements IIFArma {
 
     @Override
     public void ifDisparar() {
-
+        System.out.println("Bazuca disparandose....");
     }
 
 }

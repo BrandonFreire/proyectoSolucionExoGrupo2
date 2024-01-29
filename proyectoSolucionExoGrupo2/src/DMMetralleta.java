@@ -13,9 +13,11 @@ public class DMMetralleta implements IIFArma{
     public void dmSetColor(String dmColor) {
         this.dmColor = dmColor;
     }
+
+    
     @Override
     public void ifDisparar() {
-        
+        System.out.println("Metralleta disparandose....");
     }
     
 }

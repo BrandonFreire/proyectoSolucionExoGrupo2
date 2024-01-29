@@ -7,11 +7,14 @@
 public class IFFuenteDePoder {
     private int ifCapacidad;
     private String ifTamanio;
+    private short dmPorcentajeBateria;
 
-    /**
-     * Constructor sin parametros
-     */
-    public IFFuenteDePoder() {
+    public short dmGetPorcentajeBateria() {
+        return dmPorcentajeBateria;
+    }
+
+    public void dmSetPorcentajeBateria(short dmPorcentajeBateria) {
+        this.dmPorcentajeBateria = dmPorcentajeBateria;
     }
 
     /**
@@ -23,6 +26,7 @@ public class IFFuenteDePoder {
     public IFFuenteDePoder(int ifCapacidad, String ifTamanio) {
         this.ifCapacidad = ifCapacidad;
         this.ifTamanio = ifTamanio;
+        this.dmPorcentajeBateria = 100;
     }
 
     /**
