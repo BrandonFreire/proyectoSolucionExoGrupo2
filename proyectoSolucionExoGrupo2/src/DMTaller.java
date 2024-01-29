@@ -33,13 +33,13 @@ public class DMTaller {
         if (dmSoldados == null) {
             System.out.println("No existen registros");
         }else{
-            dmSoldados.get(1).iaUsar(dmExobots.get(1));
-            dmSoldados.get(1).dmDispararBrazoDer();
-            dmSoldados.get(1).dmDispararBrazoIzq();
-            dmSoldados.get(1).iaVolar();
-            dmSoldados.get(1).dmCambiarBateria(dmMecatronico);
-            System.out.println("Esta entrenado el idioma espanol? "+dmExobots.get(1).dmIsEspanolAvaible()); 
-            System.out.println("Esta entrenado el idioma ingles? "+dmExobots.get(1).dmIsInglesAvaible()); 
+            dmSoldados.get(0).iaUsar(dmExobots.get(0));
+            dmSoldados.get(0).dmDispararBrazoDer();
+            dmSoldados.get(0).dmDispararBrazoIzq();
+            dmSoldados.get(0).iaVolar();
+            dmSoldados.get(0).dmCambiarBateria(dmMecatronico);
+            System.out.println("Esta entrenado el idioma espanol? "+dmExobots.get(0).dmIsEspanolAvaible()); 
+            System.out.println("Esta entrenado el idioma ingles? "+dmExobots.get(0).dmIsInglesAvaible()); 
             dmSoldados.get(0).dmDispararBrazoDer();
         }
     }
