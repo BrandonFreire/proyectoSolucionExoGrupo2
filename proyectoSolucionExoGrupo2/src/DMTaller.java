@@ -1,21 +1,32 @@
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @autor David Morales
+ * @GitHub DavidME1604
+ * @date 28/01/2024
+ * @version 3.5.1
+ */
+
 public class DMTaller {
+    //Atributos
     Scanner sc = new Scanner(System.in);
     private static final String dmNombreTaller= "Base Sputnik";
-    public static String dmGetnombretaller() {
-        return dmNombreTaller;
-    }
-
-
     DMMecatronico dmMecatronico;
     List<IASoldado> dmSoldados;
     List<IFExobot> dmExobots;
 
+    //Getter
+    public static String dmGetNombretaller() {
+        return dmNombreTaller;
+    }
+
+    /*
+     * Ensamblaje de los exobots
+     */
     public void ensamblarExobots(){
         dmMecatronico = new DMMecatronico("Arseniy");
-        System.out.println("Taller: "+dmGetnombretaller());
+        System.out.println("Taller: "+dmGetNombretaller());
         System.out.println("Area de ensamblaje de exobots");
         System.out.println("Mecatronico encargado: " + dmMecatronico.dmGetNombre());
         System.out.println("Operacion: Ensamblar flotilla de Exobots");
@@ -27,6 +38,9 @@ public class DMTaller {
         dmProbar();
     }
 
+    /*
+     * Prueba que se haya asignado los exobots  correctamente y sus funcionalidades
+     */
     public void dmProbar (){
         dmSoldados = dmMecatronico.dmAsignados;
         dmExobots = dmMecatronico.dmEnsamblado;

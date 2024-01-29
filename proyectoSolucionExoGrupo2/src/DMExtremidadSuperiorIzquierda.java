@@ -1,15 +1,28 @@
+/**
+ * @autor David Morales
+ * @GitHub DavidME1604
+ * @date 28/01/2024
+ * @version 3.5.1
+ */
+
 public class DMExtremidadSuperiorIzquierda {
+    //atributos
     private String dmID;
     private String dmLargo;
     DMBazuca dmBazuca;
     DMMetralleta dmMetralleta;
     
-
+    /**
+     * Contructor con parametros
+     * @param dmID
+     * @param dmLargo
+     */
     public DMExtremidadSuperiorIzquierda(String dmID, String dmLargo) {
         this.dmID = dmID;
         this.dmLargo = dmLargo;
     }
 
+    //Setters/getters
     public String dmGetID() {
         return dmID;
     }
@@ -27,7 +40,9 @@ public class DMExtremidadSuperiorIzquierda {
         dmBazuca = bazuca;
     }
     
-
+    /**
+     * Arma metralleta como agragacion de la clase
+     */
     public void dmUsarMetralleta(DMMetralleta metralleta){
         dmMetralleta = metralleta;
     }
